@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh);
+}
+
+body {
+  font-family: 'Chiron GoRound TC', 'LINE_Seed_TW', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #ffffff; /* 淺灰背景，比較像應用程式 */
+  color: #000000;
+}
+
+#app {
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

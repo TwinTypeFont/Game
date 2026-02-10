@@ -151,7 +151,7 @@ export const levels = [
         type: 'bool',
         id: 'tf2',
         title: '字型技術',
-        question: 'Unicode 其目的在為全球語言的文字以及符號，設定唯一且統一格式編碼。',
+        question: 'Unicode 其目的在為全球語言的文字以及符號，提供唯一且統一格式編碼標準。',
         image: null,
         points: 4,
         options: [

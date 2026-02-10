@@ -10,7 +10,7 @@ const dongStrokes = [
 ];
 
 export const levels = [
-        {
+    {
         type: 'quiz',
         id: 'q0',
         title: '字型歷史',
@@ -96,20 +96,6 @@ export const levels = [
     },
     {
         type: 'quiz',
-        id: 'q6',
-        title: '基礎題型',
-        question: '下列何種字體為 MacOS 預裝字體？',
-        image: '/images/q6.jpg',
-        points: 4,
-        options: [
-            { id: 'A', label: 'A', text: '맑은 고딕', isCorrect: false },
-            { id: 'B', label: 'B', text: '新細明體', isCorrect: false },
-            { id: 'C', label: 'C', text: 'New York', isCorrect: true },
-            { id: 'D', label: 'D', text: 'MS ゴシック', isCorrect: false }
-        ]
-    },
-    {
-        type: 'quiz',
         id: 'q7',
         title: '字形規範',
         question: '圖中字形筆畫最可能遵守了何種規範？',
@@ -122,7 +108,7 @@ export const levels = [
             { id: 'D', label: 'D', text: 'ISO/IEC 10646', isCorrect: false }
         ]
     },
-        {
+    {
         type: 'quiz',
         id: 'q8',
         title: '應用題',
@@ -133,7 +119,35 @@ export const levels = [
             { id: 'A', label: 'A', text: '台北', isCorrect: false },
             { id: 'B', label: 'B', text: '吉隆坡', isCorrect: false },
             { id: 'C', label: 'C', text: '東京', isCorrect: false },
-            { id: 'D', label: 'D', text: '香港', isCorrect:  true }
+            { id: 'D', label: 'D', text: '香港', isCorrect: true }
+        ]
+    },    
+    {
+        type: 'quiz',
+        id: 'q9',
+        title: '綜合題',
+        question: '如果今天想製作一款明體字體，部件為傳承字形，參考下列哪份文件最適合？',
+        image: null,
+        points: 4,
+        options: [
+            { id: 'A', label: 'A', text: '康熙字典', isCorrect: true },
+            { id: 'B', label: 'B', text: '教育部方體母稿', isCorrect: false },
+            { id: 'C', label: 'C', text: '說文解字', isCorrect: false },
+            { id: 'D', label: 'D', text: '里耶秦簡', isCorrect: false }
+        ]
+    },
+    {
+        type: 'quiz',
+        id: 'q6',
+        title: '時事題，加分題',
+        question: 'Joy 任職於美國外交事務政策委員會。他於第二屆川普總同任期首年的感恩節，處理政府公文，請問此時他處理的公文內文最有可能是哪種字體？',
+        image: null,
+        points: 4,
+        options: [
+            { id: 'A', label: 'A', text: 'Helvetica', isCorrect: false },
+            { id: 'B', label: 'B', text: 'Garamond', isCorrect: false },
+            { id: 'C', label: 'C', text: 'Calibri', isCorrect: true },
+            { id: 'D', label: 'D', text: 'Times New Roman', isCorrect: false }
         ]
     },
     {
@@ -194,7 +208,7 @@ export const levels = [
             { id: 'F', label: 'X', text: '錯誤', isCorrect: false }
         ]
     },
-        {
+    {
         type: 'bool',
         id: 'tf5',
         title: '字形標準',
@@ -202,7 +216,7 @@ export const levels = [
         image: '/images/tf6.jpg',
         points: 4,
         options: [
-            { id: 'T', label: 'O', text: '正確', isCorrect:false },
+            { id: 'T', label: 'O', text: '正確', isCorrect: false },
             { id: 'F', label: 'X', text: '錯誤', isCorrect: true }
         ]
     },
@@ -219,7 +233,7 @@ export const levels = [
         id: 'b1',
         title: '術科：貝茲曲線練習',
         description: '拖曳紅色控制點，使曲線回到正常位置。提示：這是思源宋體~',
-        points: 8  
+        points: 8
     },
     {
         type: 'transform',
@@ -237,7 +251,8 @@ export const levels = [
             "M687.624,532.931v-42.91h43.939v-40.85h-33.984v-141.773h33.984v-37.417h-40.507v-43.253h181.937v43.253h-40.163v37.417h33.642v141.773h-33.642v40.85h43.596v42.91h-188.802ZM793.01,405.918h35.357v-55.268h-35.357v-80.67h-21.97v80.67h-35.357v55.268h35.357v84.103h21.97v-84.103Z",
             "M1270.841,541.169c-13.388-17.164-23.343-35.701-30.895-54.581-9.269,18.88-21.283,37.074-36.73,53.551l-21.97-37.417c15.79-14.418,30.208-33.298,41.536-58.7-6.522-20.939-10.984-43.597-14.074-67.626-2.06,5.149-4.119,9.612-6.179,13.389l-17.851-40.507c1.373-2.746,2.746-5.493,3.775-8.239h-15.104c-3.776,6.18-7.553,12.358-11.672,18.194h25.06v27.118c-5.836,13.045-13.045,26.776-20.254,39.134v5.836c12.358-2.403,24.03-5.149,35.015-8.582v41.536c-10.298,2.747-22.312,5.493-35.015,7.896v14.074c0,49.089-9.955,55.954-47.715,55.954l-13.045-41.879h7.553c15.79,0,19.223-3.434,19.223-20.597v-1.717c-9.955,1.717-19.91,3.09-29.178,4.119l-4.807-41.536c10.642-.687,22.313-1.717,33.984-3.433v-26.776h6.866c3.775-5.148,7.209-11.328,8.925-16.134h-14.761c-8.925,9.269-17.851,17.507-26.775,24.373l-14.418-36.73c15.791-8.926,32.955-24.373,45.656-40.851h-40.164v-36.73h23v-24.029h-16.478v-37.074h16.478v-25.402h33.984v25.402h15.791v24.373c2.746-10.642,5.148-21.283,7.208-32.269l28.149,13.731c-3.776,17.164-10.642,38.104-17.508,55.268h5.493v23.687c11.328-31.582,17.851-72.775,20.253-109.849l34.328,6.179c-1.373,14.074-3.433,28.835-6.18,43.939h46.687v41.536h-7.209c-3.09,52.521-10.642,104.356-22.656,137.998,9.611,21.283,21.283,40.163,32.954,53.551l-21.283,39.82ZM1157.217,304.308c3.775-7.896,6.865-15.791,9.611-24.029h-12.015v24.029h2.403ZM1233.767,309.8l-1.029,3.776c1.373,27.806,4.119,54.925,8.238,79.297,4.463-23.686,7.209-53.895,7.896-83.073h-15.104Z",
             "M1310.657,532.931v-40.164h69.685v-21.97h-54.924v-39.477h54.924v-20.254h-46.342v-74.49h-27.806v-75.178h25.06c-4.12-7.896-9.612-16.821-15.104-25.403l36.388-13.73c6.521,11.671,12.357,25.402,16.477,39.134h10.985v-43.253h39.477v43.253h12.015c5.149-12.015,9.612-24.716,13.045-38.104l38.104,12.358c-3.776,8.925-8.238,17.851-12.358,25.746h23.687v75.178h-29.179v74.49h-46.342v20.254h55.61v39.477h-55.61v21.97h70.715v40.164h-178.504ZM1455.177,301.218h-110.192v18.537h110.192v-18.537ZM1426.685,354.083h-54.581v22.656h54.581v-22.656Z"
-        ]    },
+        ]
+    },
     {
         type: 'mole',
         id: 'mole1',
@@ -255,7 +270,7 @@ export const levels = [
             { id: '8', image: '/images/b1-8.png' }
         ]
     },
-        {
+    {
         type: 'mole',
         id: 'mole2',
         title: '找出內鬼',
@@ -272,7 +287,7 @@ export const levels = [
             { id: '8', image: '/images/b2-8.png' }
         ]
     },
-        {
+    {
         type: 'mole',
         id: 'mole3',
         title: '找出內鬼',
@@ -289,7 +304,7 @@ export const levels = [
             { id: '8', image: '/images/b3-8.png' }
         ]
     },
-        {
+    {
         type: 'mole',
         id: 'mole4',
         title: '找出內鬼',
@@ -306,7 +321,7 @@ export const levels = [
             { id: '8', image: '/images/b4-8.png' }
         ]
     },
-        {
+    {
         type: 'mole',
         id: 'mole4',
         title: '找出內鬼',

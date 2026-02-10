@@ -10,13 +10,27 @@ const dongStrokes = [
 ];
 
 export const levels = [
+        {
+        type: 'quiz',
+        id: 'q0',
+        title: '字型歷史',
+        question: '下列對於「仿宋」之描述何者錯誤？',
+        image: null,
+        points: 2,
+        options: [
+            { id: 'A', label: 'A', text: '與明體、楷體、黑體被視為中文四大基礎字型', isCorrect: false },
+            { id: 'B', label: 'B', text: '是在日本活字時代傳入中國，後被發揚光大', isCorrect: true },
+            { id: 'C', label: 'C', text: '風格是被認為是楷體與宋體的融合', isCorrect: false },
+            { id: 'D', label: 'D', text: '並非是宋朝時期所使用的字體風格。', isCorrect: false }
+        ]
+    },
     {
         type: 'quiz',
         id: 'q1',
-        title: '字型知識測驗',
+        title: '基礎題型',
         question: '請看參考圖，下列何者非正確描述圖片字型之名稱？',
         image: '/images/q1_font_question.jpg',
-        points: 4,
+        points: 2,
         options: [
             { id: 'A', label: 'A', text: '明體', isCorrect: false },
             { id: 'B', label: 'B', text: '宋體', isCorrect: false },
@@ -27,7 +41,7 @@ export const levels = [
     {
         type: 'quiz',
         id: 'q2',
-        title: '字型知識測驗',
+        title: '字型風格',
         question: '下圖字型風格是什麼呢？',
         image: '/images/q2_font_question.jpg',
         points: 4,
@@ -41,7 +55,7 @@ export const levels = [
     {
         type: 'quiz',
         id: 'q3',
-        title: '字型知識測驗',
+        title: '字體排印',
         question: '請問「國際文字設計協會」正確縮寫為何？',
         image: null,
         points: 4,
@@ -55,21 +69,21 @@ export const levels = [
     {
         type: 'quiz',
         id: 'q4',
-        title: '字型知識測驗',
-        question: '請問下列哪個字體非由「威鋒數位（華康科技）」製作、設計或代工而成。',
+        title: '排印術語',
+        question: '請問正確描述「行距」之術語為？',
         image: null,
         points: 4,
         options: [
-            { id: 'A', label: 'A', text: 'LINE Seed TW', isCorrect: false },
-            { id: 'B', label: 'B', text: '微軟正黑體', isCorrect: true },
-            { id: 'C', label: 'C', text: '蘋方體', isCorrect: false },
-            { id: 'D', label: 'D', text: '新細明體', isCorrect: false }
+            { id: 'A', label: 'A', text: 'Tracking', isCorrect: false },
+            { id: 'B', label: 'B', text: 'Leading', isCorrect: true },
+            { id: 'C', label: 'C', text: 'Kerning', isCorrect: false },
+            { id: 'D', label: 'D', text: 'Ligature', isCorrect: false }
         ]
     },
     {
         type: 'quiz',
         id: 'q5',
-        title: '字型知識測驗',
+        title: '技術',
         question: '下列何者非網頁可支援解析之字體格式？',
         image: null,
         points: 4,
@@ -83,7 +97,7 @@ export const levels = [
     {
         type: 'quiz',
         id: 'q6',
-        title: '字型知識測驗',
+        title: '基礎題型',
         question: '下列何種字體為 MacOS 預裝字體？',
         image: '/images/q6.jpg',
         points: 4,
@@ -97,7 +111,7 @@ export const levels = [
     {
         type: 'quiz',
         id: 'q7',
-        title: '字型知識測驗',
+        title: '字形規範',
         question: '圖中字形筆畫最可能遵守了何種規範？',
         image: '/images/q7.jpg',
         points: 4,
@@ -111,7 +125,7 @@ export const levels = [
         {
         type: 'quiz',
         id: 'q8',
-        title: '字型知識測驗',
+        title: '應用題',
         question: '克里斯因工作來到亞洲某城市，他看到圖中的字體，並且同行友人還提到，這座城市曾有國際大型字體公司之子公司設立於此，請問克里斯最有可能來到哪座城市？',
         image: '/images/q8.jpg',
         points: 4,
@@ -125,7 +139,7 @@ export const levels = [
     {
         type: 'bool',
         id: 'tf1',
-        title: '字型知識測驗',
+        title: '字形版權',
         question: '「免費字體即開源字體」該描述是否正確',
         image: null,
         points: 4,
@@ -136,8 +150,8 @@ export const levels = [
     }, {
         type: 'bool',
         id: 'tf2',
-        title: '字型知識測驗',
-        question: '〈芫荽〉是由基於 Fontworks 公司之開源字體改作而成？',
+        title: '字型技術',
+        question: 'Unicode 其目的在為全球語言的文字以及符號，設定唯一且統一格式編碼。',
         image: null,
         points: 4,
         options: [
@@ -147,7 +161,7 @@ export const levels = [
     }, {
         type: 'bool',
         id: 'tf3',
-        title: '字型知識測驗',
+        title: '基礎題型',
         question: '黑體亦可稱為方體、無襯線體',
         image: '/images/tf3.jpg',
         points: 4,
@@ -159,7 +173,7 @@ export const levels = [
     {
         type: 'bool',
         id: 'tf4',
-        title: '字型知識測驗',
+        title: '基礎題型',
         question: '上圖風格皆為「義大利斜體（Italic）」。',
         image: '/images/tf4.jpg',
         points: 4,
@@ -171,7 +185,7 @@ export const levels = [
     {
         type: 'bool',
         id: 'tf5',
-        title: '字型知識測驗',
+        title: '字型技術',
         question: '字體可為向量文件，亦可嵌入點陣圖檔。',
         image: null,
         points: 4,
@@ -183,7 +197,7 @@ export const levels = [
         {
         type: 'bool',
         id: 'tf5',
-        title: '字型知識測驗',
+        title: '字形標準',
         question: '圖中字體之字形規範，遵照「台灣國字標準字體」。',
         image: '/images/tf6.jpg',
         points: 4,
@@ -210,7 +224,7 @@ export const levels = [
     {
         type: 'transform',
         id: 't1',
-        title: '術科：部件變形',
+        title: '術科：排印灰度',
         description: '拖曳黑色區塊並通過右下角控制點縮放，使其與文字缺口完美結合。',
         points: 8
         ,

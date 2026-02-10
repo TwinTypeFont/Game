@@ -39,15 +39,16 @@ onMounted(() => {
     <div class="score-card">
         <!-- Decoration or Icon based on score -->
         <div class="icon-wrapper">
-            <span v-if="score >= 80">🏆</span>
-            <span v-else-if="score >= 60">🎉</span>
-            <span v-else>💪</span>
+            <img style="height: 20px;" v-if="score >= 95" src="/images/4.png" alt="頂尖成績"/>
+            <img style="height: 20px;" v-else-if="score >= 90" src="/images/3.png" alt="字體大師" />
+            <img style="height: 20px;" v-else-if="score >= 80" src="/images/5.png" alt="有天賦" />
+            <img style="height: 20px;" v-else-if="score >= 70" src="/images/1.png" alt="需要加強" />
+            <img style="height: 20px;" v-else src="/images/2.png" alt="再接再厲" />
         </div>
 
-        <h1 class="title">測驗結果</h1>
 
         <div class="score-display">
-            <span class="score-number">{{ displayedScore }}</span>
+            <span class="score-number" style="font-family: 'Shantell Sans';font-weight: 500;">{{ displayedScore }}</span>
             <span class="score-total">/ {{ totalScore || 100 }}</span>
         </div>
 
@@ -73,7 +74,6 @@ onMounted(() => {
     padding: 2rem;
     height: 100%;
     min-height: 400px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .score-card {
@@ -100,19 +100,21 @@ onMounted(() => {
     left: 0;
     right: 0;
     height: 150px;
-    background: linear-gradient(180deg, rgba(66, 184, 131, 0.05) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(255, 238, 4, 0.113) 0%, rgb(255, 255, 255) 100%);
     z-index: 0;
     border-radius: 32px 32px 0 0;
 }
 
 .icon-wrapper {
     position: relative;
-    font-size: 4rem;
     line-height: 1;
     margin-bottom: -0.5rem;
     z-index: 1;
-    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    animation: bounce 2s infinite ease-in-out;
+}
+
+.icon-wrapper img {
+
+    object-fit: contain;
 }
 
 .title {
@@ -138,9 +140,9 @@ onMounted(() => {
     font-size: 5.5rem;
     font-weight: 800;
     line-height: 1;
-    color: #42b883;
+    color: #00ff8c;
     /* Optional gradient text */
-    background: linear-gradient(135deg, #efd347 0%, #ffc579 100%);
+    background: linear-gradient(135deg, #b40101 0%, #f45151 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -167,21 +169,19 @@ onMounted(() => {
     background-color: #000000;
     color: white;
     border: none;
-    padding: 1rem 3rem;
+    padding: 0.8rem 1.2rem;
     font-size: 1.125rem;
     font-weight: 600;
     border-radius: 999px;
     cursor: pointer;
     transition: all 0.2s ease;
     width: 80%;
-    box-shadow: 0 4px 12px rgba(66, 184, 131, 0.3);
     z-index: 1;
 }
 
 .restart-btn:hover {
     transform: translateY(-2px);
-    background-color: #3aa876;
-    box-shadow: 0 8px 16px rgba(66, 184, 131, 0.4);
+    background-color: #fcc41c;
 }
 
 .restart-btn:active {

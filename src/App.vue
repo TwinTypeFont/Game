@@ -175,18 +175,34 @@ if (typeof window !== 'undefined') {
       :history="userHistory"
       @restart="gameState = 'intro'"
     />
+
+    <footer class="app-footer">
+      <a href="https://twintype.co" target="_blank" rel="noopener noreferrer" style="font-size: 10px;">TwinType</a>
+    </footer>
   </div>
 </template>
 
 <style scoped>
-body{
-    font-family:'LINE_Seed_TW';
-}
-
 .app-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
+}
+
+.app-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.app-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
 }
 
 .intro {
@@ -213,11 +229,11 @@ body{
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #444;
     background: rgba(255,255,255,0.8);
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 100;

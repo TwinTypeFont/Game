@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  font-family: 'Chiron GoRound TC', 'LINE_Seed_TW', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Chiron GoRound TC', system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #ffffff; /* 淺灰背景，比較像應用程式 */
   color: #000000;
 }
